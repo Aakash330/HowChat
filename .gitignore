@@ -13,3 +13,21 @@
 .externalNativeBuild
 .cxx
 local.properties
+# Android Studio specific
+.idea/
+.gradle/
+
+# Build output
+/build/
+captures/
+
+# Gradle cache
+/.gradle/
+/out/
+
+# Signing keys
+*.keystore
+*.jks
+
+# Android test reports
+/test-output/

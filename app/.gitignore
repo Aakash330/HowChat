@@ -1,1 +1,21 @@
 /build
+# Android Studio specific
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Build output
+/build/
+captures/
+
+# Gradle cache
+/.gradle/
+/out/
+
+# Signing keys
+*.keystore
+*.jks
+
+# Android test reports
+/test-output/
