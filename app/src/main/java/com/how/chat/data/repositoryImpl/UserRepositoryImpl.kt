@@ -6,6 +6,6 @@ import com.how.chat.domain.repository.UserRepository
 class UserRepositoryImpl :UserRepository {
     override fun getUser(): User{
        //
-        return ;
+        return User(1,"lksnd","skldnfksj@gmail.com");
     }
 }
