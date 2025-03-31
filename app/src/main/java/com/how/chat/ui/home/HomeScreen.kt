@@ -9,10 +9,21 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
 
+/*Data Layer: Repository, Model, API, Database
+Domain Layer: UseCase, Repository Interface
+UI Layer: Screens, ViewModel, State, Events
+Navigation: NavHost
+DI: Hilt Modules
+Utils: Constants, Extensions*/
 @Composable
+@Preview(showBackground = true, showSystemUi = true)
 fun HomeScreen(viewModel: HomeViewModel = viewModel()) {
     val uiState by viewModel.uiState.collectAsState()
 
